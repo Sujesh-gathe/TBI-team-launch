@@ -32,7 +32,7 @@
   transform-style: preserve-3d;
   transition: all 0.8s ease;
   margin-left: 50px;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
@@ -59,7 +59,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 350px;
+  width: 320px;
   height: 100px;
   border-radius: 10px;
   backface-visibility: hidden;
@@ -100,19 +100,31 @@
   transform-style: preserve-3d;
   transition: all 0.8s ease;
   margin-left: 70px;
-  margin-top: 400px;
+  margin-top: 300px;
 }
 .thefront1{
   position: absolute;
   top: 0;
   left: 0;
-  width: 250px;
+  width: 350px;
   height: 90px;
   border-radius: 10px;
   backface-visibility: hidden;
   overflow: hidden;
   background: #455283;
   color: black;
+}
+.thecard2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 100px;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  margin-left: 150px;
+  margin-top: 450px;
 }
 .thefront1 h1, .theback h1{
   font-family: 'zilla slab', sans-serif;
@@ -132,14 +144,14 @@
 .thecard1:hover{
   transform: rotateY(180deg);
 }
-#exe2{
-    margin-left: 450px;
+.thecard2:hover{
+  transform: rotateY(180deg);
 }
-#exe3{
-    margin-left:820px;
+#exe2{
+    margin-left: 950px;
 }
 #exe4{
-    margin-left: 1200px;
+    margin-left: 850px;
 }
 /*This block (ends here) is merely styling for the flip card, and is NOT an essential part of the flip code */
     </style>
@@ -166,11 +178,11 @@
             <div class="thefront1"><h1>Executive</h1></div>
             <div class="theback"><h1>Suraj Verma</h1></div>
         </div>
-        <div class="thecard1" id="exe3">
+        <div class="thecard2" >
             <div class="thefront1"><h1>Executive</h1></div>
             <div class="theback"><h1>Rutuj Runwal</h1></div>
         </div>
-        <div class="thecard1" id="exe4">
+        <div class="thecard2" id="exe4">
             <div class="thefront1"><h1>Executive</h1></div>
             <div class="theback"><h1>Anish Garg</h1></div>
         </div>
