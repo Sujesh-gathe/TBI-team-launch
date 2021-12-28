@@ -5,8 +5,7 @@
     <title>CSS Card Flip</title>
     <style>
     body{
-        background: rgb(251,198,63);
-        background: radial-gradient(circle, rgba(251,198,63,1) 5%, rgba(252,70,107,1) 100%);
+        background: #1a1a1d
     }
 
 /* THE MAINCONTAINER HOLDS EVERYTHING */
@@ -26,12 +25,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 600px;
+  width: 400px;
   height: 100px;
   border-radius: 10px;
   transform-style: preserve-3d;
   transition: all 0.8s ease;
-  margin-left: 50px;
+  margin-left: 100px;
   margin-top: 70px;
 }
 
@@ -48,13 +47,14 @@ h1{
   position: absolute;
   top: 0;
   left: 0;
-  width: 600px;
+  width: 400px;
   height: 150px;
   border-radius: 10px;
   backface-visibility: hidden;
   overflow: hidden;
-  background: #455283;
-  color: black;
+  background: #c3073f;
+  color: whitesmoke;
+  text-align: center;
 }
 
 /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
@@ -67,8 +67,8 @@ h1{
   border-radius: 10px;
   backface-visibility: hidden;
   overflow: hidden;
-  background: whitesmoke;
-  color: #333;
+  background: #979797;
+  color: whitesmoke;
   text-align: center;
   transform: rotateY(180deg);
 }
@@ -91,34 +91,55 @@ h1{
   text-align: center;
 }
 #man2{
-    margin-left: 750px;
+    margin-left: 580px;
 }
-
+#man3{
+  margin-left:1050px;
+}
+#exe2{
+  margin-left:830px;
+}
+#pratham{
+  margin-top: 35px;
+  font-size: 1.6rem;
+}
 .thecard1{
   position: absolute;
   top: 0;
   left: 0;
-  width: 600px;
+  width: 400px;
   height: 100px;
   border-radius: 10px;
   transform-style: preserve-3d;
   transition: all 0.8s ease;
-  margin-left: 400px;
+  margin-left: 300px;
   margin-top: 265px;
 }
 .thecard2{
   position: absolute;
   top: 0;
   left: 0;
-  width: 600px;
+  width: 1200px;
   height: 100px;
   border-radius: 10px;
   transform-style: preserve-3d;
   transition: all 0.8s ease;
-  margin-left: 50px;
+  margin-left: 230px;
   margin-top: 480px;
 }
 .thefront1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000px;
+  height: 150px;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #c3073f;
+  color: whitesmoke;
+}
+.theback1{
   position: absolute;
   top: 0;
   left: 0;
@@ -127,8 +148,10 @@ h1{
   border-radius: 10px;
   backface-visibility: hidden;
   overflow: hidden;
-  background: #8f9290;
-  color: black;
+  background: #979797;
+  color: whitesmoke;
+  text-align: center;
+  transform: rotateY(180deg);
 }
 .thefront1 h1, .theback h1{
   font-family: 'zilla slab', sans-serif;
@@ -151,9 +174,7 @@ h1{
 .thecard2:hover{
   transform: rotateY(180deg);
 }
-#exe2{
-    margin-left: 750px;
-}
+
 
 @media only screen and (max-width: 600px) {
 	.maincontainer{
@@ -187,27 +208,29 @@ h1{
     <div class="maincontainer">
        <div class="thecard" id="man1">
   
-            <div class="thefront"><h1>President</h1></div>
+            <div class="thefront"><h1>CEO</h1></div>
             <div class="theback"><h1>Ayush Agrawal</h1></div>
         </div>
         <div class="thecard" id="man2">
-    
-           <div class="thefront"><h1>president</h1></div>
+           <div class="thefront"><h1>CTO</h1></div>
            <div class="theback"><h1>Harnoor Puniyani</h1></div>
-      
         </div> 
-        <div class="thecard1">
-            <div class="thefront"><h1>president</h1></div>
-            <div class="theback"><h1>Anubhav Pachauri</h1></div>
+        <div class="thecard" id="man3">
+          <div class="thefront"><h1>MD</h1></div>
+          <div class="theback"><h1>Anubhav Prachuri</h1></div>
+       </div> 
+        <div class="thecard2">
+            <div class="thefront1"><h1>Vice President</h1></div>
+            <div class="theback1"><h1 id="pratham">Pratham Choubey</h1></div>
         </div>
-        <div class="thecard2" >
-            <div class="thefront"><h1>President</h1></div>
+        <div class="thecard1" >
+            <div class="thefront"><h1>MD</h1></div>
             <div class="theback"><h1>Gaurav Shukla</h1></div>
         </div>
-		<div class="thecard2" id="exe2">
-			<div class="thefront"><h1>President</h1></div>
-            <div class="theback"><h1>Atharva Uplanchiwar</h1></div>
-		</div>
+        <div class="thecard1" id="exe2">
+          <div class="thefront"><h1>CFO</h1></div>
+          <div class="theback"><h1 >Atharva Uplanchiwar</h1></div>
+        </div>
     </div>
   </body>
 </html>

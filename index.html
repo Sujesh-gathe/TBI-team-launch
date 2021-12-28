@@ -5,8 +5,7 @@
     <title>CSS Card Flip</title>
     <style>
     body{
-      background: rgb(251,198,63);
-      background: radial-gradient(circle, rgba(251,198,63,1) 5%, rgba(252,70,107,1) 100%);
+      background:#1a1a1d;
     }
 
 /* THE MAINCONTAINER HOLDS EVERYTHING */
@@ -20,7 +19,10 @@
   transform: translate(-50%, -50%);
 
 }
-
+h2{
+  text-align: center;
+  margin-bottom: 15px;
+}
 /* THE CARD HOLDS THE FRONT AND BACK FACES */
 .thecard{
   position: absolute;
@@ -31,7 +33,7 @@
   border-radius: 10px;
   transform-style: preserve-3d;
   transition: all 0.8s ease;
-  margin-left: 50px;
+  margin-left: 100px;
   margin-top: 70px;
 }
 
@@ -50,7 +52,7 @@
   border-radius: 10px;
   backface-visibility: hidden;
   overflow: hidden;
-  background: #455283;
+  background: #c3073f;
   color: black;
 }
 
@@ -59,7 +61,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 350px;
+  width: 400px;
   height: 100px;
   border-radius: 10px;
   backface-visibility: hidden;
@@ -88,19 +90,19 @@
   text-align: center;
 }
 #man2{
-    margin-left: 750px;
+    margin-left: 800px;
 }
 
 .thecard1{
   position: absolute;
   top: 0;
   left: 0;
-  width: 600px;
+  width: 400px;
   height: 100px;
   border-radius: 10px;
   transform-style: preserve-3d;
   transition: all 0.8s ease;
-  margin-left: 400px;
+  margin-left: 450px;
   margin-top: 265px;
 }
 .thecard2{
@@ -112,21 +114,16 @@
   border-radius: 10px;
   transform-style: preserve-3d;
   transition: all 0.8s ease;
-  margin-left: 50px;
+  margin-left: 100px;
   margin-top: 480px;
 }
-.thefront1{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 600px;
-  height: 100px;
-  border-radius: 10px;
-  backface-visibility: hidden;
-  overflow: hidden;
-  background: #8f9290;
-  color: black;
+.header{
+  margin-top: 35px;
+  text-align: center;
 }
+/* .thefront1{
+  
+} */
 .thefront1 h1, .theback a{
   font-family: 'zilla slab', sans-serif;
   padding: 30px;
@@ -149,7 +146,7 @@
   transform: rotateY(180deg);
 }
 #exe2{
-    margin-left: 750px;
+    margin-left: 800px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -184,27 +181,27 @@
     <div class="maincontainer">
        <div class="thecard" id="man1">
   
-            <div class="thefront"><h1>Reveal A</h1></div>
-            <div class="theback"><a href="Managment.html">Management</a></div>
+            <div class="thefront"><h1 class="header">Reveal A</h1></div>
+            <div class="theback"><a href="Managment.html"><h2>Administration</h2></a></div>
         </div>
         <div class="thecard" id="man2">
     
-           <div class="thefront"><h1>Reveal B</h1></div>
-           <div class="theback"><a href="Technical.html">Technical</h1></div>
+           <div class="thefront"><h1 class="header">Reveal B</h1></div>
+           <div class="theback"><a href="Technical.html" ><h2>Technical</h2></h1></a></div>
       
         </div> 
         <div class="thecard1">
-            <div class="thefront"><h1>Reveal C</h1></div>
-            <div class="theback"><a href="Presidents.html">Presidents</a></div>
+            <div class="thefront"><h1 class="header">Reveal C</h1></div>
+            <div class="theback"><a href="Presidents.html"><h2>Presidents</h2></a></div>
         </div>
         <div class="thecard2" >
-            <div class="thefront"><h1>Reveal D</h1></div>
-            <div class="theback"><a href="Alumina.html">Alumina and Outreach</a></div>
+            <div class="thefront"><h1 class="header">Reveal D</h1></div>
+            <div class="theback"><a href="Alumina.html" ><h2>Networking</h2></a></div>
         </div>
-		<div class="thecard2" id="exe2">
-			<div class="thefront"><h1>Reveal E</h1></div>
-            <div class="theback"><a href="Social media.html">Social Media</a></div>
-		</div>
+	    	<div class="thecard2" id="exe2">
+		    	<div class="thefront"><h1 class="header">Reveal E</h1></div>
+          <div class="theback"><a href="Social media.html" ><h2>Creative</h2></a></div>
+		   </div>
     </div>
   </body>
 </html>

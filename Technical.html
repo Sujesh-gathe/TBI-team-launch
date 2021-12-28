@@ -5,8 +5,7 @@
     <title>CSS Card Flip</title>
     <style>
     body{
-      background: rgb(251,198,63);
-      background: radial-gradient(circle, rgba(251,198,63,1) 5%, rgba(252,70,107,1) 100%);
+      background:#1a1a1d
     }
 
 /* THE MAINCONTAINER HOLDS EVERYTHING */
@@ -26,13 +25,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 300px;
-  height: 100px;
+  width: 600px;
+  height: 90px;
   border-radius: 10px;
   transform-style: preserve-3d;
   transition: all 0.8s ease;
-  margin-left: 50px;
-  margin-top: 150px;
+  margin-left: 235px;
+  margin-top: 50px;
 }
 
 /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
@@ -45,13 +44,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 300px;
-  height: 150px;
+  width: 1000px;
+  height: 120px;
   border-radius: 10px;
   backface-visibility: hidden;
   overflow: hidden;
-  background: #455283;
-  color: black;
+  background: #c3073f;
+  color: white;
 }
 
 /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
@@ -59,17 +58,44 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 350px;
+  width: 320px;
   height: 100px;
   border-radius: 10px;
   backface-visibility: hidden;
   overflow: hidden;
-  background: whitesmoke;
-  color: #333;
+  background: #4e4e50;
+  color: whitesmoke;
   text-align: center;
   transform: rotateY(180deg);
 }
+.thefront2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 450px;
+  height: 90px;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #c3073f;
+  color: whitesmoke;
+}
 
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 100px;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #c3073f;
+  color: whitesmoke;
+  text-align: center;
+  transform: rotateY(180deg);
+}
 
 /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
 .thefront h1, .theback h1{
@@ -88,37 +114,67 @@
   text-align: center;
 }
 #man2{
-    margin-left: 430px;
-}
-#man3{
-    margin-left:800px;
-}
-#man4{
-    margin-left: 1170px;
+    margin-left: 780px;
 }
 .thecard1{
   position: absolute;
   top: 0;
   left: 0;
-  width: 300px;
-  height: 100px;
+  width: 700px;
+  height: 90px;
   border-radius: 10px;
   transform-style: preserve-3d;
   transition: all 0.8s ease;
-  margin-left: 200px;
-  margin-top: 400px;
+  margin-left: 20px;
+  margin-top: 230px;
 }
 .thefront1{
   position: absolute;
   top: 0;
   left: 0;
-  width: 250px;
+  width: 500px;
   height: 90px;
   border-radius: 10px;
   backface-visibility: hidden;
   overflow: hidden;
-  background: #455283;
-  color: black;
+  background: #c3073f;
+  color: whitesmoke;
+}
+.thecard2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 100px;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  margin-left: 10px;
+  margin-top: 380px;
+}
+.thecard3{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 100px;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  margin-left: 10px;
+  margin-top: 500px;
+}
+.thecard4{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 100px;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  margin-left: 70px;
+  margin-top: 610px;
 }
 .thefront1 h1, .theback h1{
   font-family: 'zilla slab', sans-serif;
@@ -135,17 +191,53 @@
   font-size: 12px;
   text-align: center;
 }
+.thefront2 h1, .theback h1{
+  font-family: 'zilla slab', sans-serif;
+  padding: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.thefront2 p, .theback p{
+  font-family: 'zilla slab', sans-serif;
+  padding: 30px;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+}
 .thecard1:hover{
   transform: rotateY(180deg);
 }
-#exe2{
-    margin-left: 620px;
+.thecard2:hover{
+  transform: rotateY(180deg);
 }
-#exe3{
-    margin-left:1040px;
+.thecard3:hover{
+  transform: rotateY(180deg);
+}
+.thecard4:hover{
+  transform: rotateY(180deg);
+}
+#man2{
+  margin-left:530px;
+}
+#man3{
+  margin-left:1040px;
+}
+#exe2{
+    margin-left: 530px;
 }
 #exe4{
-    margin-left: 1120px;
+    margin-left: 1050px;
+}
+#exe5{
+    margin-left:530px;
+}
+#exe6{
+    margin-left:1050px;
+}
+#exe7{
+    margin-left:800px;
 }
 /*This block (ends here) is merely styling for the flip card, and is NOT an essential part of the flip code */
     </style>
@@ -153,40 +245,45 @@
 
   <body>
     <div class="maincontainer">
-       <div class="thecard" id="man1">
-  
-            <div class="thefront"><h1>Manager</h1></div>
-            <div class="theback"><h1>Atul Pandey</h1></div>
+       <div class="thecard">
+          <div class="thefront"><h1>Technical Head</h1></div>
+          <div class="theback"><h1>Atul Pandey</h1></div>
         </div>
-        <div class="thecard" id="man2">
-    
-           <div class="thefront"><h1>Manager</h1></div>
-           <div class="theback"><h1>Siddhant Binani</h1></div>
-      
+        <div class="thecard1" id="man2">
+         <div class="thefront1"><h1>Database Manager</h1></div>
+         <div class="theback"><h1>Aditi Ashtikar</h1></div>
         </div> 
-        <div class="thecard" id="man3">
-  
-            <div class="thefront"><h1>Manager</h1></div>
-            <div class="theback"><h1>Sakshi Goyal</h1></div>
-    
-        </div>
-        <div class="thecard" id="man4">
-  
-            <div class="thefront"><h1>Manager</h1></div>
-            <div class="theback"><h1>Aditi Bagde</h1></div>
-    
-        </div>
+        <div class="thecard1" id="man3">
+          <div class="thefront1"><h1>Senior Developer</h1></div>
+          <div class="theback"><h1>Sooraj Verma</h1></div>
+         </div>
         <div class="thecard1">
-            <div class="thefront1"><h1>Executive</h1></div>
-            <div class="theback"><h1>Aditi Astikar</h1></div>
+          <div class="thefront1"><h1>Senior Developer</h1></div>
+          <div class="theback"><h1>Rutuj Runwal</h1></div>
         </div>
-        <div class="thecard1" id="exe2">
-            <div class="thefront1"><h1>Executive</h1></div>
-            <div class="theback"><h1>Anjali Singh</h1></div>
+        <div class="thecard2" id="exe2">
+          <div class="thefront2"><h1>Database Executive</h1></div>
+          <div class="theback"><h1>Abhishek Ashtankar</h1></div>
         </div>
-        <div class="thecard1" id="exe3">
-            <div class="thefront1"><h1>Executive</h1></div>
-            <div class="theback"><h1>Dhriti Khatri</h1></div>
+        <div class="thecard2" >
+          <div class="thefront2"><h1>Database Executive</h1></div>
+          <div class="theback"><h1>Pranay Jain</h1></div>
+        </div>
+        <div class="thecard2" id="exe4">
+          <div class="thefront2"><h1>Junior Developer</h1></div>
+          <div class="theback"><h1>Ishan Mittal</h1></div>
+        </div>
+        <div class="thecard3" id="exe5">
+          <div class="thefront2"><h1>Junior Developer</h1></div>
+          <div class="theback"><h1>Ayush Shete</h1></div>
+        </div>
+        <div class="thecard3">
+          <div class="thefront2"><h1>Junior Developer</h1></div>
+          <div class="theback"><h1>Kshitij Sawarkar</h1></div>
+        </div>
+        <div class="thecard3" id="exe6">
+          <div class="thefront2"><h1>Junior Developer</h1></div>
+          <div class="theback"><h1>Yatharth Jain</h1></div>
         </div>
     </div>
     <!-- <div class="m">
